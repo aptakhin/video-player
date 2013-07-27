@@ -58,13 +58,6 @@ public:
 	virtual void set_playing(time_mark playing) { playing_ = playing; }
 	time_mark playing() const { return playing_; }
 
-	struct ShowFrame
-	{
-		IFramePtr frame;
-		time_mark pts;
-		StreamConf conf;
-	};
-
 	virtual void seek(time_mark t) = 0;
 
 	virtual IFramePtr show_next() = 0;

@@ -59,8 +59,8 @@
 #define VD_LOG(msg) { vd::Logger::i().wh(vd::Logger::M_DEFAULT); vd::Logger::i().wc() << msg << " "; vd::Logger::i().wp(__FILE__, __LINE__) << std::endl; }
 #define VD_LOG_SCOPE_IDENT() vd::LogIdent vd_log_scope_inst;
 
-#include "fun.hpp"
-#include "fwd.hpp"
+#include <vd/fun.hpp>
+#include <vd/fwd.hpp>
 
 namespace vd 
 {

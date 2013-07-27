@@ -1,0 +1,62 @@
+
+set(VD_HDR sources/include/vd)
+
+set(VD_HEADER_FILES
+${VD_HDR}/common.hpp
+${VD_HDR}/fwd.hpp
+${VD_HDR}/proto.hpp
+${VD_HDR}/timeline.hpp
+${VD_HDR}/ffmpeg.hpp
+${VD_HDR}/sdl.hpp
+${VD_HDR}/fun.hpp
+${VD_HDR}/mainwindow.hpp
+)
+
+set(VD_SRC sources/src)
+
+set(VD_SOURCE_FILES
+${VD_SRC}/common.cpp
+${VD_SRC}/main.cpp
+${VD_SRC}/proto.cpp
+${VD_SRC}/timeline.cpp
+${VD_SRC}/ffmpeg.cpp
+${VD_SRC}/sdl.cpp
+${VD_SRC}/mainwindow.cpp
+)
+
+set(VD_UI sources/ui)
+
+set(VD_UI_FILES
+${VD_UI}/mainwindow.ui
+)
+
+set(VD_RES sources/res)
+set(VD_RES_FILES
+${VD_RES}/test.qrc
+)
+
+set(VD_MOC_FILES
+${VD_HDR}/mainwindow.hpp
+${VD_HDR}/proto.hpp
+${VD_HDR}/sdl.hpp
+${VD_HDR}/timeline.hpp
+)
+
+source_group("Main" FILES
+${VD_HDR}/common.hpp
+${VD_SRC}/common.cpp
+${VD_HDR}/fwd.hpp
+${VD_SRC}/main.cpp
+${VD_HDR}/proto.hpp
+${VD_SRC}/proto.cpp
+${VD_HDR}/mainwindow.hpp
+${VD_SRC}/mainwindow.cpp
+${VD_HDR}/ffmpeg.hpp
+${VD_SRC}/ffmpeg.cpp
+${VD_HDR}/sdl.hpp
+${VD_SRC}/sdl.cpp
+${VD_HDR}/timeline.hpp
+${VD_SRC}/timeline.cpp
+${VD_HDR}/fun.hpp
+)
+

@@ -115,9 +115,6 @@ public:
 
 std::ostream& operator << (std::ostream& out, const QString& str);
 
-
-
-
 template <typename T>
 class CircularBuffer
 {

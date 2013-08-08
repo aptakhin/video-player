@@ -90,9 +90,7 @@ typedef std::shared_ptr<TimeLineTrack> TimeLineTrackPtr;
 typedef std::weak_ptr<TimeLineTrack> TimeLineTrackWPtr;
 typedef std::shared_ptr<TimeLineSceneWidget> TimeLineSceneWidgetPtr;
 
-
 typedef std::shared_ptr<DecodingState> DecodingStatePtr;
-
 
 typedef std::shared_ptr<Scene> ScenePtr;
 typedef std::shared_ptr<Modifier> ModifierPtr;

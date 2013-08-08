@@ -35,13 +35,13 @@ protected:
 private:
 	::Ui::MainWindow* ui;
 	ProjectUPtr project_;
-	Preview* preview_;
-	QThread* preview_thread_;
+	std::unique_ptr<Preview> preview_;
+	std::unique_ptr<QThread> preview_thread_;
 	
 	QStateMachine machine_;
 
-	QState* play_state_;
-	QState* pause_state_;
+	std::unique_ptr<QState> play_state_;
+	std::unique_ptr<QState> pause_state_;
 };
 
 } // namespace xdd

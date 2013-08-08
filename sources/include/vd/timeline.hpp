@@ -118,8 +118,6 @@ protected:
 
 };
 
-
-
 class MediaLoader
 {
 public:
@@ -151,6 +149,7 @@ public:
 
 	protected:
 		MediaBackend* backend_;
+		Node* cached_;
 		time_mark t_;
 	};
 };

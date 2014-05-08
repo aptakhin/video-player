@@ -1,0 +1,6 @@
+msvc10_generate.bat
+msvc10_generate_x64.bat
+msvc11_generate.bat
+deps
+bld
+build
